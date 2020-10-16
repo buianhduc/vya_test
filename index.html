@@ -9,24 +9,32 @@
     <link rel="stylesheet" href="./css/style.css">
 <!--    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
 
 
     <div class="container-fluid row">
-        <div class="col-lg-9">
+        <div class="col-9">
             <nav class="navbar navbar-default d-flex flex-row justify-content-between align-items-center">
-                <div class="nav-left d-flex justify-content-between align-items-center">
-                    <i class="fas fa-bars"></i>
-                    <a href="#" class="logo logo-bold "><h2>Chukwudi</h2></a>
+                <div class="nav-left row container col-3">
+                    <i class="fas fa-bars col-1"></i>
+                    <a href="#" class="logo col-10"><h2>Chukwudi</h2></a>
                 </div>
                 <div class="search-bar nav-middle d-inline-flex align-items-center justify-content-around">
                     <i class="fa fa-search"></i>
                     <input type="text" class="search-input" placeholder="Search">
                 </div>
             </nav>
-            <div class="banner">
-                <img src="https://via.placeholder.com/820x170" alt="" width="100%">
+            <div class="banner container row">
+                <div class="col-3 image"><img src="./asset/banner_img.jpg" alt="" height="200px"></div>
+                <div class="col-6 d-flex flex-column justify-content-center align-items-start">
+                    <h2>$0 delivery for 30 days!  🎉</h2>
+                    <h5>$0 delivery fee for orders over orders over $10 for 30 days</h5>
+                </div>
+                <div class="col-3 d-flex flex-row justify-content-center align-items-end">
+                    <a href="#">Learn more <i class="fas fa-arrow-right" style = "margin-left: 10px"></i></a>
+                </div>
             </div>
 
             <div class="main-menu container" style = "width: 100%">
@@ -63,7 +71,7 @@
                         </div>
                         <div class="item text-center d-flex flex-column align-items-center justify-content-around">
                             <div><i class="far fa-apple-crate"></i></div>
-                            <p>Desser</p>
+                            <p>Dessert</p>
                         </div>
                         <div class="item text-center d-flex flex-column align-items-center justify-content-around">
                             <div><i>🍍</i></div>
@@ -75,50 +83,50 @@
                         </div>
 
                     </div>
-                    <i class="fas fa-chevron-right"></i>
+                    <div class = "left-btn"><i class="fas fa-chevron-right"></i></div>
                 </div>
                 <div class="options d-flex row flex-row justify-content-between" style="width: 100%">
                     <div class="option card" style = "width: fit-content; height:fit-content;">
-                        <img src="https://via.placeholder.com/250x150" alt="" class="card-img-top">
+                        <img src="./asset/bagel.jpg" alt="" class="card-img-top">
                         <div class="card-body" style = "width: 100%;">
                             <div class="card-title"><h4>Bagel Story</h4></div>
-                            <div class="info d-inline-flex flex-row justify-content-between" style = "width: 120px">
+                            <div class="info d-inline-flex flex-row justify-content-between">
                                 <div class="rating">4.7</div>
-                                <div class="tags d-inline-flex flex-row justify-content-between" style="width: max-content">
+<!--                                <div class="tags d-inline-flex flex-row justify-content-between">-->
                                     <div class="tag">Deli</div>
                                     <div class="tag">Bagels</div>
-                                </div>
+<!--                                </div>-->
                                 <div class="price">$$</div>
                             </div>
 
                         </div>
 
                     </div>
-                    <div class="option card" style = "width: fit-content; height:fit-content;">
-                        <img src="https://via.placeholder.com/250x150" alt="" class="card-img-top">
-                        <div class="card-body" style = "width: 100%;">
+                    <div class="option card">
+                        <img src="./asset/pizza.png" alt="" class="card-img-top">
+                        <div class="card-body">
                             <div class="card-title"><h4>The Estaminet</h4></div>
-                            <div class="info d-inline-flex flex-row justify-content-between" style = "width: 120px">
+                            <div class="info d-inline-flex flex-row justify-content-between">
                                 <div class="rating">4.5</div>
-                                <div class="tags d-inline-flex flex-row justify-content-between" style="width: max-content">
+<!--                                <div class="tags d-inline-flex flex-row justify-content-between">-->
                                     <div class="tag">Cafes</div>
                                     <div class="tag">Creperies</div>
-                                </div>
+<!--                                </div>-->
                                 <div class="price">$</div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="option card" style = "width: fit-content; height:fit-content;">
-                        <img src="https://via.placeholder.com/250x150" alt="" class="card-img-top">
+                    <div class="option card">
+                        <img src="./asset/french_bread.jpeg" alt="" class="card-img-top">
                         <div class="card-body" style = "width: 100%;">
                             <div class="card-title"><h4>Le Paris Dakar</h4></div>
-                            <div class="info d-inline-flex flex-row justify-content-between" style = "width: 120px">
+                            <div class="info d-inline-flex flex-row justify-content-between">
                                 <div class="rating">4.6</div>
-                                <div class="tags d-inline-flex flex-row justify-content-between" style="width: max-content">
+<!--                                <div class="tags d-inline-flex flex-row justify-content-between">-->
                                     <div class="tag">Creperies</div>
                                     <div class="tag">Sandwich</div>
-                                </div>
+<!--                                </div>-->
                                 <div class="price">$$</div>
                             </div>
 
@@ -128,93 +136,93 @@
             </div>
         </div>
 
-        <div class="col-lg-3 bg-gray">
-            <nav class = "d-flex flex-row justify-content-end align-items-center">
-                <div class="nav-right d-flex flex-row justify-content-around align-items-center">
-                    <div><i class="far fa-user"></i></div>
-                    <div class="quantity bg-yellow text-center align-items-center justify-content-center d-flex">3</div>
-                </div>
-            </nav>
-            <h1>My 😎 Order</h1>
-            <div class="address bg-purple d-flex flex-column justify-content-center">
-                <div class="where d-flex flex-row align-items-center justify-content-between">
-                    <p>625 St Marks Ave</p>
-                    <p class="font-color-yellow">Edit</p>
-                </div>
-                <div class="time d-flex flex-row align-items-center justify-content-between">
-                    <div class = "d-flex flex-row align-items-center justify-content-between" >
-                        <div class = "d-flex align-items-center justify-content-center"><i class="fa fa-clock font-color-yellow"></i></div>
-                        <p>35 min</p>
+        <div class="col-3 bg-gray col-right">
+            <div class="margin">
+                <nav class = "d-flex flex-row justify-content-end align-items-center">
+                    <div class="nav-right d-flex flex-row justify-content-around align-items-center">
+                        <div><i class="far fa-user"></i></div>
+                        <div class="quantity bg-yellow text-center align-items-center justify-content-center d-flex">3</div>
                     </div>
-                    <p class="font-color-yellow">Choose time</p>
-                </div>
-            </div>
-            <div class="order-items">
-                <table class="order-item container table-borderless table">
-                    <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th><img src="https://via.placeholder.com/100x50" alt=""></th>
-                        <td><div class="quantity">1</div></td>
-                        <td><div>x</div></td>
-                        <td><div class="name">Beach BBQBurger</div></td>
-                        <td><div class="price">$14.99</div></td>
-                    </tr>
-                    <tr>
-                        <th><img src="https://via.placeholder.com/100x50" alt=""></th>
-                        <td><div class="quantity">1</div></td>
-                        <td><div>x</div></td>
-                        <td><div class="name">Beach BBQBurger</div></td>
-                        <td><div class="price">$14.99</div></td>
-                    </tr>
-
-                    <tr>
-                        <th><img src="https://via.placeholder.com/100x50" alt=""></th>
-                        <td><div class="quantity">1</div></td>
-                        <td><div>x</div></td>
-                        <td><div class="name">Beach BBQBurger</div></td>
-                        <td><div class="price">$14.99</div></td>
-                    </tr>
-
-                    <tr>
-                        <th><img src="https://via.placeholder.com/100x50" alt=""></th>
-                        <td><div class="quantity">1</div></td>
-                        <td><div>x</div></td>
-                        <td><div class="name">Beach BBQBurger</div></td>
-                        <td><div class="price">$14.99</div></td>
-                    </tr>
-
-                    </tbody>
-                </table>
-            </div>
-            <div class="order-end container">
-                <div class="price d-flex flex-row justify-content-between align-items-center row">
-                    <h3>Total:</h3>
-                    <h1>$25.97</h1>
-                </div>
-                <div class="d-flex flex-row justify-content-between align-items-center">
-                    <div class="">
-                        <b class = "row">Persons</b>
-                        <div class="box row d-flex">
-                            <span>-</span>
-                            <span>1</span>
-                            <span>+</span>
+                </nav>
+                <h1>My 😎 Order</h1>
+                <div class="address bg-purple d-flex flex-column justify-content-center">
+                    <div class="where d-flex flex-row align-items-center justify-content-between">
+                        <p>625 St Marks Ave</p>
+                        <a href = "#" class="font-color-yellow">Edit</a>
+                    </div>
+                    <div class="time d-flex flex-row align-items-center justify-content-between">
+                        <div class = "d-flex flex-row align-items-center justify-content-between" >
+                            <div class = "d-flex align-items-center justify-content-center"><i class="fa fa-clock font-color-yellow"></i></div>
+                            <p>35 min</p>
                         </div>
+                        <a href="#" class="font-color-yellow">Choose time</a>
                     </div>
-                    <div class="checkout">
-                        <button class = "btn bg-yellow">
-                            <b>Checkout</b>
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
+                </div>
+                <div class="order-items">
+                    <table class="order-item container table-borderless table">
+                        <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th><img src="./asset/burger.jpg" alt="burger"></th>
+                            <td><div class="quantity">1</div></td>
+                            <td><div>x</div></td>
+                            <td><div class="name">Beach BBQBurger</div></td>
+                            <td><div class="price">$14.99</div></td>
+                        </tr>
+                        <tr>
+                            <th><img src="./asset/french_fries.jpeg" alt="fries"></th>
+                            <td><div class="quantity">1</div></td>
+                            <td><div>x</div></td>
+                            <td><div class="name">French Fries</div></td>
+                            <td><div class="price">$9.99</div></td>
+                        </tr>
+
+                        <tr>
+                            <th><img src="./asset/cheese_sauce.jpeg" alt=""></th>
+                            <td><div class="quantity">1</div></td>
+                            <td><div>x</div></td>
+                            <td><div class="name">Cheese Sauce</div></td>
+                            <td><div class="price">$0.99</div></td>
+                        </tr>
+                        <tr>
+                            <th><div class="deli d-flex justify-content-center align-items-center"><i class="far fa-shuttle-van"></i></div></th>
+                            <td><div class="quantity"></div></td>
+                            <td><div></div></td>
+                            <td><div class="name">Delivery</div></td>
+                            <td><div class="price">$0.00</div></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="order-end container">
+                    <div class="price d-flex flex-row justify-content-between align-items-center row">
+                        <h3>Total:</h3>
+                        <h1>$25.97</h1>
                     </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between align-items-center">
+                <div class="padding-left-30">
+                    <b class = "row">Persons</b>
+                    <div class="box row d-flex justify-content-around align-items-center">
+                        <span>-</span>
+                        <span>1</span>
+                        <span>+</span>
+                    </div>
+                </div>
+                <div class="checkout">
+                    <button class = "btn bg-yellow">
+                        <b>Checkout</b>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -222,5 +230,6 @@
 
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/bootstrap.js"></script>
+    <script src = "./js/style.js"></script>
 </body>
 </html>

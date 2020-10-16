@@ -4,7 +4,13 @@
   margin: 0;
 }
 
-.col-lg-9 {
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: visible;
+}
+
+.col-9 {
   padding-right: 50px;
   padding-left: 50px;
 }
@@ -17,9 +23,13 @@ nav {
 nav .nav-left {
   width: 15%;
 }
+nav .nav-left i {
+  font-size: 2rem;
+}
 nav .nav-left a {
   font-weight: bold;
   color: black;
+  font-size: 2.5rem;
 }
 nav .nav-middle {
   width: 75%;
@@ -28,7 +38,7 @@ nav .nav-middle {
   box-sizing: border-box;
   border-radius: 20px;
 }
-nav .nav-middle input, nav .nav-middle input:focus {
+nav .nav-middle input {
   width: 85%;
   outline: none;
   box-shadow: none;
@@ -36,13 +46,20 @@ nav .nav-middle input, nav .nav-middle input:focus {
   background-color: #f8f8f7;
   color: #f8f8f7;
 }
+nav .nav-middle input:focus {
+  color: black;
+}
 nav .nav-right {
   width: 100px;
 }
 nav .nav-right .quantity {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
+  font-size: 1.5em;
+}
+nav .nav-right .quantity div {
+  font-size: 1.5em;
 }
 
 .main-menu .header {
@@ -52,7 +69,7 @@ nav .nav-right .quantity {
 }
 .main-menu .delivery-time {
   font-size: 1.25rem;
-  width: 17%;
+  width: 20%;
   border-radius: 30px;
   color: white;
 }
@@ -60,7 +77,7 @@ nav .nav-right .quantity {
   margin: 0;
 }
 .main-menu .items {
-  width: 90%;
+  width: 80%;
 }
 .main-menu .category {
   width: 100%;
@@ -73,7 +90,7 @@ nav .nav-right .quantity {
   width: 60px;
   background-color: white;
   border-radius: 50px;
-  box-shadow: 40px -20px 30px 10px #f8f8f8;
+  box-shadow: 16px -19px 25px 22px #f8f8f8;
 }
 .main-menu .item div {
   border: 0.5px solid #f8f8f7;
@@ -99,8 +116,27 @@ nav .nav-right .quantity {
   border: 0;
 }
 
-.banner > img {
+.banner {
   border-radius: 30px;
+  width: 100%;
+  height: 200px;
+  background-color: #fff8ec;
+}
+.banner h2 {
+  color: #f35e38;
+  font-size: 3.5rem;
+}
+.banner h5 {
+  color: #e8e8e7;
+  font-size: 1.5rem;
+}
+.banner div:nth-child(3) {
+  padding-bottom: 20px;
+  color: #f35e38;
+}
+.banner a {
+  color: #f35e38;
+  font-size: 1.5rem;
 }
 
 .option {
@@ -116,6 +152,8 @@ nav .nav-right .quantity {
 }
 
 .address {
+  margin-bottom: 20px;
+  margin-top: 20px;
   color: white;
   border-radius: 20px;
   height: 100px;
@@ -140,6 +178,91 @@ nav .nav-right .quantity {
 
 .price {
   border-bottom: 2px solid #e8e8e7;
+}
+
+table th img {
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+}
+table td {
+  vertical-align: middle !important;
+}
+table td div {
+  font-weight: bold;
+}
+
+.option {
+  width: fit-content;
+  height: fit-content;
+}
+.option .info {
+  width: 180px;
+}
+.option .info .tags {
+  width: 70px;
+}
+
+.checkout {
+  margin-top: 30px;
+}
+.checkout button {
+  width: 200px;
+  height: 58px;
+  right: 0px;
+  border-radius: 30px 0px 0px 30px;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 1.4rem;
+}
+
+.margin {
+  padding: 15px 15px 15px 15px;
+}
+
+.box {
+  border: 1px solid #f8f8f7;
+  width: 80px;
+}
+
+.col-right {
+  padding: 0px 0px 15px 15px;
+}
+
+.padding-left-30 {
+  padding-left: 30px;
+  font-size: 1.25rem;
+}
+.padding-left-30 div {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.25em;
+}
+
+.left-btn {
+  background-color: #f8f8f7;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.option img {
+  width: 250px;
+  height: 150px;
+}
+
+.deli {
+  background-color: #fbf3d2;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+.deli i {
+  color: #fece4a;
+  font-size: 2rem;
 }
 
 .bg-yellow {

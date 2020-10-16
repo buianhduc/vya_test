@@ -3,12 +3,21 @@ $purple: rgb(74,49,145);
 $gray: rgb(248,248,247);
 $orange: rgb(243,94,56);
 $light_gray: rgb(232,232,231);
+$light_yellow: rgb(251,243,210);
+$light_orange: rgb(254,206,74);
+$lighter_yellow: rgb(255,248,236);
+$ligh_gray: rgb(167,160,153);
 *{
   text-decoration: none !important;
   padding: 0;
   margin: 0;
 }
-.col-lg-9{
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: visible;
+}
+.col-9{
   padding-right: 50px;
   padding-left: 50px;
 }
@@ -16,18 +25,21 @@ nav{
   font-size: 1.25rem;
   height: 15vh;
   .nav-left{
-    //font-size: 1.5rem;
+    i{
+      font-size: 2rem;
+    }
     width: 15%;
     a{
       font-weight: bold;
       color: black;
+      font-size: 2.5rem;
     }
   }
   .nav-middle{
     width: 75%;
     height: 10vh;
     background-color: $gray;
-    input, input:focus{
+    input{
       width: 85%;
       outline: none;
       box-shadow: none;
@@ -35,15 +47,23 @@ nav{
       background-color: $gray;
       color: $gray;
     }
+    input:focus{
+      color: black;
+
+    }
     box-sizing: border-box;
     border-radius: 20px;
   }
   .nav-right{
     width: 100px;
     .quantity {
-      width: 30px;
-      height: 30px;
+      width: 50px;
+      height: 50px;
       border-radius: 10px;
+      font-size: 1.5em;
+      div{
+        font-size: 1.5em;
+      }
     }
   }
   margin: 4vh 2vh 7vh 2vh;
@@ -57,7 +77,7 @@ nav{
 
   .delivery-time {
     font-size: 1.25rem;
-    width: 17%;
+    width: 20%;
     border-radius: 30px;
     color: white;
 
@@ -66,7 +86,7 @@ nav{
     }
   }
   .items{
-    width: 90%;
+    width: 80%;
   }
   .category{
     width: 100%;
@@ -96,7 +116,7 @@ nav{
       font-weight: bold;
       font-size: 0.95em;
     }
-    box-shadow: 40px -20px 30px 10px rgb(248,248,248);
+    box-shadow: 16px -19px 25px 22px rgb(248,248,248);
   }
   .item-active{
     background-color: $yellow;
@@ -105,9 +125,29 @@ nav{
     }
   }
 }
-.banner>img{
+.banner{
   border-radius: 30px;
+  width: 100%;
+  height: 200px;
+  background-color: $lighter_yellow;
+  h2{
+    color: $orange;
+    font-size: 3.5rem;
+  }
+  h5{
+    color: $light_gray;
+    font-size: 1.5rem;
+  }
+  div:nth-child(3){
+    padding-bottom: 20px;
+    color: $orange;
+  }
+  a{
+    color: $orange;
+    font-size: 1.5rem;
+  }
 }
+
 .option{
   width: 300px;
   height: fit-content;
@@ -120,6 +160,8 @@ nav{
   }
 }
 .address{
+  margin-bottom: 20px;
+  margin-top: 20px;
   color: white;
   border-radius: 20px;
   height: 100px;
@@ -146,7 +188,89 @@ nav{
 .price{
   border-bottom: 2px solid $light_gray;
 }
+table{
+  th{
+    img{
+      border-radius: 10px;
+      width: 100px;
+      height: 50px;
+    }
+  }
+  td{
+    div{
+      font-weight: bold;
+    }
+    vertical-align: middle !important;
+  }
+}
+.option{
+  width: fit-content;
+  height: fit-content;
+  .info{
+    width: 180px;
+    .tags{
+      width: 70px;
+    }
+  }
+}
+.checkout{
+  margin-top: 30px;
+  button{
+    width: 200px;
+    height: 58px;
+    //position: absolute;
+    right: 0px;
+    border-radius: 30px 0px 0px 30px;;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 1.4rem;
+  }
+}
+.margin{
+  padding: 15px 15px 15px 15px;
+}
+.box{
+  border: 1px solid $gray;
+  width: 80px ;
 
+}
+.col-right{
+  padding: 0px 0px 15px 15px;
+}
+.padding-left-30{
+  padding-left: 30px;
+  font-size: 1.25rem;
+  div{
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.25em;
+  }
+}
+.left-btn{
+  background-color: $gray;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.option{
+  img{
+    width: 250px;
+    height: 150px;
+  }
+}
+.deli{
+  background-color: $light_yellow;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  i{
+    color: $light_orange;
+    font-size: 2rem;
+  }
+}
 .bg-yellow{
   background-color: $yellow;
 }
